@@ -2,6 +2,9 @@ body {
     overflow-x: hidden;
     position: relative;
     background-color: #F4FDFF;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 section {
@@ -43,6 +46,7 @@ section {
 
 nav {
     opacity: 80%;
+    width: 100vw;
 }
 
 #app-screenshot {
@@ -61,6 +65,15 @@ section:has(#app-screenshot) {
     box-shadow: inset 0px -50px 500px #FFF;
 }
 
-li {
-    display: inline-block;
+ul {
+    width: 45%;
+    list-style: none;
+}
+
+i {
+    font-size: 1rem;
+    padding: 10px;
+    color: gray;
+    background-color: rgba(200, 200, 100, 0.6);
+    border-radius: 10px;
 }
