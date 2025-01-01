@@ -8,13 +8,17 @@ body {
 }
 
 section {
-    width: 100vw;
-    height: 100vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+}
+
+section:has(#app-screenshot, #bg-image) {
+    width: 100vw;
+    height: 100vh;
 }
 
 #bg-image {
@@ -34,14 +38,17 @@ section {
     color: white;
     position: absolute;
     top: 30vh;
-    padding: 20px 30px;
+    padding: 4vh 4vw;
+    max-width: 50vw;
+    max-height: 50vh;
     border: 2px dashed white;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
 }
 
 #header-text>p {
-    color: gray;
+    color: #AAA;
 }
 
 nav {
@@ -61,19 +68,35 @@ nav {
 section:has(#app-screenshot) {
     max-height: 60vh;
     background-image: url('/assets/pngtree-vector-illustration-of-white-pattern-background-on-grid-paper-with-dashed-lineseps10-vector-png-image_31573984.png');
-    border-bottom: #999 1px solid;
+    border-bottom: #CCC 1px solid;
     box-shadow: inset 0px -50px 500px #FFF;
 }
 
+section:has(h2) {
+    height: 20vh;
+}
+
 ul {
-    width: 45%;
+    width: 50%;
     list-style: none;
 }
 
 i {
-    font-size: 1rem;
     padding: 10px;
     color: gray;
     background-color: rgba(200, 200, 100, 0.6);
     border-radius: 10px;
+    margin-right: 5px;
+}
+
+section:has(h2) {
+    height: 50vh;
+    align-items: start;
+    justify-content: end;
+    border-bottom: #CCC 1px solid;
+}
+
+h2 {
+    margin: 0 0 8vh 10vw;
+    font-size: 3rem;
 }
