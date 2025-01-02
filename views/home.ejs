@@ -30,9 +30,9 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <a class="navbar-brand ms-5" href="">Track</a>
+      <a class="navbar-brand fs-5" href="">☇ Track</a>
       <button
-        class="navbar-toggler"
+        class="navbar-toggler me-2"
         type="button"
         data-toggle="collapse"
         data-target="#navbarTogglerDemo02"
@@ -63,8 +63,9 @@
       </section>
       <section>
         <img
+          class="img-fluid"
           id="app-screenshot"
-          src="assets/image13.png"
+          src="assets/image13.webp"
           alt="app screenshot"
         />
       </section>
@@ -81,26 +82,123 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="mid-section-text">
         <h2>
           Journaling your goals, <br />
           brings you closer to them
         </h2>
       </section>
+      <section id="collapse-menu" class="container">
+        <div class="row">
+          <article class="col-6">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quo
+              commodi nesciunt expedita at magnam pariatur aperiam, voluptatibus
+              earum modi quia soluta labore accusantium, excepturi incidunt quis
+              aliquid iure! Est!
+            </p>
+          </article>
+          <article id="accordion" class="col-6">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button
+                    class="btn"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    The Importance of Planning
+                  </button>
+                </h5>
+              </div>
+
+              <div
+                id="collapseOne"
+                class="collapse show"
+                aria-labelledby="headingOne"
+              >
+                <div class="card-body" data-parent="#accordion">
+                  <p>
+                    Planning decreases the chances of risk: Planning is an
+                    activity which permits a manager to look forward and predict
+                    changes. By determining in prior the tasks to be completed,
+                    planning notes the way to deal with changes and
+                    unpredictable effects.
+                  </p>
+                  <h4>
+                    It helps us achieve our goals, and allows for more efficient
+                    use of time and other resources.
+                  </h4>
+                  <ul>
+                    <h6>Not planning leads to:</h6>
+                    <li>Wasted resources</li>
+                    <li>Unpredictable results</li>
+                    <li>Less oppurtunity for cooperation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button
+                    class="btn"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="true"
+                    aria-controls="collapseTwo"
+                  >
+                    The Curse of Overplanning
+                  </button>
+                </h5>
+              </div>
+
+              <div
+                id="collapseTwo"
+                class="collapse show"
+                aria-labelledby="headingTwo"
+              >
+                <div class="card-body" data-parent="#accordion">
+                  <p>
+                    Excessive planning can lead to anxiety, disappointment,
+                    stunted creativity, lack of trust and scattered focus. I
+                    also have seen “overplanning” actually hinder performance
+                    and limit success.
+                  </p>
+                  <p>
+                    If you have multiple forms of planning and update all of
+                    them regularly that means a chunk of your time is going to
+                    simply planning out your actions. Are you actually getting
+                    those things done?
+                  </p>
+                  <h4>It's a form of procrastination</h4>
+                  <img
+                    class="img-fluid"
+                    src="assets/936q8cqzvn6a1.webp"
+                    alt="overplanning image"
+                  />
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
   </body>
