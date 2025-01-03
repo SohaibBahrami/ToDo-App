@@ -103,3 +103,26 @@ h2 {
     margin: 0 0 8vh 10vw;
     font-size: 3rem;
 }
+
+h5 {
+    color: black;
+}
+
+.accordion-button:enabled,
+.accordion-button:active,
+.accordion-button:focus {
+    background-color: transparent;
+    border: 0;
+}
+
+.accordion-item {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-bottom: #CCC 1px solid;
+}
+
+#collapse-section {
+    background-image: url('/assets/pngtree-vector-illustration-of-white-pattern-background-on-grid-paper-with-dashed-lineseps10-vector-png-image_31573984.webp');
+    border-bottom: #CCC 1px solid;
+    box-shadow: inset 50px 50px 500px white, inset -50px -50px 500px white;
+}
