@@ -7,6 +7,10 @@ body {
     font-style: normal;
 }
 
+li {
+    list-style: none;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -52,7 +56,6 @@ section:has(#app-screenshot, #bg-image) {
 
 nav {
     opacity: 80%;
-    /* width: 100vw; */
 }
 
 nav a {
@@ -71,7 +74,7 @@ nav a {
 section:has(#app-screenshot) {
     max-height: 60vh;
     background-image: url('/assets/pngtree-vector-illustration-of-white-pattern-background-on-grid-paper-with-dashed-lineseps10-vector-png-image_31573984.webp');
-    border-bottom: #CCC 1px solid;
+    border-bottom: #BBB 1px solid;
     box-shadow: inset 0px -50px 500px #FFF;
 }
 
@@ -81,10 +84,9 @@ section:has(h2) {
 
 section>ul {
     width: 50%;
-    list-style: none;
 }
 
-i {
+#special-features li i {
     padding: 10px;
     color: gray;
     background-color: rgba(200, 200, 100, 0.6);
@@ -96,7 +98,7 @@ section:has(h2) {
     height: 50vh;
     align-items: start;
     justify-content: end;
-    border-bottom: #CCC 1px solid;
+    border-bottom: #BBB 1px solid;
 }
 
 h2 {
@@ -106,6 +108,10 @@ h2 {
 
 h5 {
     color: black;
+}
+
+.accordion {
+    padding: 0;
 }
 
 .accordion-button:enabled,
@@ -118,11 +124,63 @@ h5 {
 .accordion-item {
     border: 0;
     background-color: rgba(255, 255, 255, 0.75);
-    border-bottom: #CCC 1px solid;
+    border-bottom: #BBB 1px solid;
+    border-left: #BBB 1px solid;
+}
+
+.accordion-button h5 {
+    font-size: 1.1rem;
 }
 
 #collapse-section {
     background-image: url('/assets/pngtree-vector-illustration-of-white-pattern-background-on-grid-paper-with-dashed-lineseps10-vector-png-image_31573984.webp');
-    border-bottom: #CCC 1px solid;
+    border-bottom: #BBB 1px solid;
     box-shadow: inset 50px 50px 500px white, inset -50px -50px 500px white;
+}
+
+.accordion-body {
+    width: 75%;
+}
+
+#collapseOne h4 {
+    border-left: red 2px solid;
+    padding-left: 10px;
+}
+
+#downsides li i {
+    color: red;
+    margin-right: 10px;
+    transform: rotateY(180deg);
+}
+
+#collapseTwo .accordion-body h4 {
+    border-left: red 2px solid;
+    padding-left: 10px;
+}
+
+#procrastination-image {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#why-use-planner {
+    background-color: rgba(255, 255, 255, 0.75);
+    border-right: #BBB 1px solid;
+    padding: 0;
+}
+
+#why-use-planner h4 {
+    color: black;
+}
+
+#advantage-list li i {
+    transform: rotateX(180deg);
+    color: green;
+    margin-right: 10px;
+}
+
+#teamwork-image {
+    margin-top: 20%;
+    max-width: 80%;
+    max-height: 150%;
 }

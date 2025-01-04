@@ -37,16 +37,70 @@
       </h2>
     </section>
     <section id="collapse-section" class="container">
-      <div id="" class="row">
-        <article class="col-6">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quo
-            commodi nesciunt expedita at magnam pariatur aperiam, voluptatibus
-            earum modi quia soluta labore accusantium, excepturi incidunt quis
-            aliquid iure! Est!
-          </p>
+      <div class="row col-12">
+        <article id="why-use-planner" class="col-6 accordion accordion-flush">
+          <div class="accordion-item">
+            <div class="accordion-header" id="headingLeft">
+              <button
+                type="button"
+                class="accordion-button mb-3"
+                data-toggle="collapse"
+                data-target="#collapseLeft"
+                aria-expanded="true"
+                aria-controls="collapseLeft"
+              >
+                <h4 class="m-3">Why Use a Tool For Planning?</h4>
+              </button>
+              <div
+                id="collapseLeft"
+                class="accordion-collapse show"
+                aria-labelledby="headingLeft"
+              >
+                <div class="accordion-body" data-parent="#accordion">
+                  <ul id="advantage-list">
+                    <li>
+                      <i class="fa-solid fa-thumbs-down"></i
+                      ><b> They help plan and organize goals</b> and break them
+                      down into tasks,
+                    </li>
+                    <br />
+                    <li>
+                      <i class="fa-solid fa-thumbs-down"></i
+                      ><b> You'll always know the next step,</b> along with the
+                      required resources ,
+                    </li>
+                    <br />
+                    <li>
+                      <i class="fa-solid fa-thumbs-down"></i
+                      ><b> Determine task duration and dependencies,</b> as well
+                      as deadlines.
+                    </li>
+                    <br />
+                    <li>
+                      <i class="fa-solid fa-thumbs-down"></i
+                      ><b> You can cooperate with your friends,</b> for a boost
+                      in motivaion.
+                    </li>
+                    <br />
+                    <li>
+                      <i class="fa-solid fa-thumbs-down"></i
+                      ><b> It will bring balance to your life,</b> managing
+                      hobbies, family time and self-care.
+                    </li>
+                  </ul>
+                  <br />
+                  <img
+                    id="teamwork-image"
+                    src="assets/pngtree-human-brain-diagram-png-image_14644407.webp"
+                    class="figure-img img-fluid rounded"
+                    alt="teamwork image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </article>
-        <article id="accordion accordion-flush" class="col-6 accordion">
+        <article id="accordion" class="col-6 accordion accordion-flush">
           <div class="accordion-item">
             <div class="accordion-header" id="headingOne">
               <button
@@ -60,7 +114,6 @@
                 <h5 class="mb-0">The Importance of Planning</h5>
               </button>
             </div>
-
             <div
               id="collapseOne"
               class="accordion-collapse show"
@@ -68,21 +121,30 @@
             >
               <div class="accordion-body" data-parent="#accordion">
                 <p>
-                  Planning decreases the chances of risk: Planning is an
-                  activity which permits a manager to look forward and predict
-                  changes. By determining in prior the tasks to be completed,
-                  planning notes the way to deal with changes and unpredictable
-                  effects.
+                  By determining in prior the tasks to be completed, planning
+                  notes the way to deal with changes and unpredictable effects.
                 </p>
+                <br />
                 <h4>
                   It helps us achieve our goals, and allows for more efficient
                   use of time and other resources.
                 </h4>
-                <ul>
-                  <h6>Not planning leads to:</h6>
-                  <li>Wasted resources</li>
-                  <li>Unpredictable results</li>
-                  <li>Less oppurtunity for cooperation</li>
+                <br />
+                <h6>Not planning leads to:</h6>
+                <br />
+                <ul id="downsides">
+                  <li>
+                    <i class="fa-solid fa-thumbs-down"></i>Wasted resources
+                  </li>
+                  <br />
+                  <li>
+                    <i class="fa-solid fa-thumbs-down"></i>Unpredictable results
+                  </li>
+                  <br />
+                  <li>
+                    <i class="fa-solid fa-thumbs-down"></i>Less oppurtunity for
+                    cooperation
+                  </li>
                 </ul>
               </div>
             </div>
@@ -113,15 +175,12 @@
                   have seen “overplanning” actually hinder performance and limit
                   success.
                 </p>
-                <p>
-                  If you have multiple forms of planning and update all of them
-                  regularly that means a chunk of your time is going to simply
-                  planning out your actions. Are you actually getting those
-                  things done?
-                </p>
+                <br />
                 <h4>It's a form of procrastination</h4>
+                <br />
                 <img
-                  class="img-fluid"
+                  id="procrastination-image"
+                  class="img-fluid rounded d-block"
                   src="assets/936q8cqzvn6a1.webp"
                   alt="overplanning image"
                 />
