@@ -72,6 +72,7 @@ section:has(#app-screenshot, #bg-image) {
 
 
 nav {
+    font-family: "Roboto", serif;
     opacity: 80%;
     width: 100vw;
 }
@@ -111,7 +112,7 @@ section>ul {
     margin-right: 5px;
 }
 
-section:has(h2) {
+#mid-section-text:has(h2) {
     height: 50vh;
     align-items: start;
     justify-content: end;
@@ -238,4 +239,26 @@ h5 {
 
 .review-stars i:nth-of-type(3) {
     font-size: 3rem;
+}
+
+#blog-section {
+    margin: 20vh 0 4vh 10vw;
+    height: 20vh;
+    align-items: start;
+    justify-content: end;
+    border: 0;
+}
+
+#blog-section h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 15vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
