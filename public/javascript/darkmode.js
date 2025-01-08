@@ -1,5 +1,6 @@
 const html = document.querySelector("html");
 const nav = document.querySelector("nav");
+const themeIcon = document.querySelector(".theme-icon");
 const darkmodeBtn = document.getElementById("darkmode-toggle");
 const appScreenshotSection = document.getElementById("app-screenshot-section");
 const appScreenshot = document.getElementById("app-screenshot");
@@ -10,6 +11,8 @@ const accordionHeading = document.querySelectorAll(".accordion-h");
 darkmodeBtn.addEventListener("click", (event) => {
   if (html.getAttribute("data-bs-theme") == "dark") {
     html.setAttribute("data-bs-theme", "light");
+    themeIcon.classList.remove("fa-regular");
+    themeIcon.classList.add("fa-solid");
     nav.classList.remove("darkmode");
     nav.classList.add("lightmode");
     bgImage.classList.remove("darkmode");
@@ -29,6 +32,8 @@ darkmodeBtn.addEventListener("click", (event) => {
     });
   } else {
     html.setAttribute("data-bs-theme", "dark");
+    themeIcon.classList.add("fa-regular");
+    themeIcon.classList.remove("fa-solid");
     nav.classList.add("darkmode");
     nav.classList.remove("lightmode");
     bgImage.classList.add("darkmode");
