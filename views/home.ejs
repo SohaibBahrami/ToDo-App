@@ -5,7 +5,7 @@
 <body>
   <header>
     <section>
-      <div id="bg-image"></div>
+      <div id="bg-image" class="lightmode"></div>
       <div id="header-text">
         <h1 class="display-3">
           Welcome To
@@ -19,9 +19,9 @@
         <button class="btn btn-primary"><a href="">Get Started</a></button>
       </div>
     </section>
-    <section class="d-none d-sm-flex">
+    <section id="app-screenshot-section" class="d-none d-sm-flex lightmode">
       <img
-        class="img-fluid"
+        class="img-fluid lightmode"
         id="app-screenshot"
         src="assets/image13.webp"
         alt="app screenshot"
@@ -29,10 +29,17 @@
     </section>
     <section class="mt-3 d-none d-sm-flex container">
       <ul id="special-features" class="row flex-nowrap justify-content-center">
-        <li class="col"><i class="fa-solid fa-bolt"></i> Fast & Responsive</li>
-        <li class="col"><i class="fa-solid fa-dollar-sign"></i> Free to Use</li>
         <li class="col">
-          <i class="fa-solid fa-fingerprint"></i> Fully Personalized
+          <i class="dark-icons fa-solid fa-bolt lightmode"></i> Fast &
+          Responsive
+        </li>
+        <li class="col">
+          <i class="dark-icons fa-solid fa-dollar-sign lightmode"></i> Free to
+          Use
+        </li>
+        <li class="col">
+          <i class="dark-icons fa-solid fa-fingerprint lightmode"></i> Fully
+          Personalized
         </li>
       </ul>
     </section>
@@ -44,7 +51,7 @@
         brings you closer to them
       </h2>
     </section>
-    <section id="collapse-section" class="container d-none d-md-flex">
+    <section id="collapse-section" class="container d-none d-md-flex lightmode">
       <div class="row col-12">
         <article id="why-use-planner" class="col-6 accordion accordion-flush">
           <div class="accordion-item">
@@ -57,7 +64,7 @@
                 aria-expanded="true"
                 aria-controls="collapseLeft"
               >
-                <h4 class="m-3">Why Use a Tool For Planning?</h4>
+                <h4 class="accordion-h m-3">Why Use a Tool For Planning?</h4>
               </button>
               <div
                 id="collapseLeft"
@@ -120,7 +127,7 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                <h5 class="mb-0">The Importance of Planning</h5>
+                <h5 class="mb-0 accordion-h">The Importance of Planning</h5>
               </button>
             </div>
             <div
@@ -168,7 +175,7 @@
                 aria-expanded="true"
                 aria-controls="collapseTwo"
               >
-                <h5 class="mb-0">The Curse of Overplanning</h5>
+                <h5 class="mb-0 accordion-h">The Curse of Overplanning</h5>
               </button>
             </div>
 

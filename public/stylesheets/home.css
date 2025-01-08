@@ -22,8 +22,14 @@
 
 nav {
     font-family: "Roboto", serif;
-    opacity: 80%;
+    opacity: 70%;
     width: 100vw;
+
+}
+
+nav.lightmode {
+    color: black;
+    background-color: white;
 }
 
 nav a {
@@ -37,7 +43,6 @@ nav button {
 body {
     overflow-x: hidden;
     position: relative;
-    background-color: #F4FDFF;
     font-family: "Roboto", serif;
     font-weight: 400;
     font-style: normal;
@@ -70,16 +75,19 @@ section:has(#app-screenshot, #bg-image) {
     width: 101vw;
     height: 100vh;
     overflow: hidden;
+}
+
+#bg-image.lightmode {
     box-shadow: inset 0px -20px 40px #FFF;
 }
 
 
 #header-text {
     text-align: center;
-    color: white;
     position: absolute;
     top: 30vh;
     text-shadow: 2px 2px 2px black;
+    color: whitesmoke;
 }
 
 #header-text p {
@@ -90,15 +98,22 @@ section:has(#app-screenshot, #bg-image) {
     width: 60vw;
     height: 80vh;
     border-radius: 10px;
-    filter: drop-shadow(2px 2px 20px);
     transform: translateY(-40%);
 }
 
-section:has(#app-screenshot) {
+#app-screenshot-section {
     max-height: 60vh;
     background-image: url('/assets/pngtree-vector-illustration-of-white-pattern-background-on-grid-paper-with-dashed-lineseps10-vector-png-image_31573984.webp');
     border-bottom: #BBB 1px solid;
-    box-shadow: inset 0px -50px 500px #FFF;
+}
+
+#app-screenshot.lightmode {
+    filter: drop-shadow(2px 2px 20px);
+}
+
+#app-screenshot-section.lightmode {
+    box-shadow: inset 0px -10px 50px #FFF;
+
 }
 
 #mid-section-text:has(h2) {
@@ -111,7 +126,7 @@ section:has(#app-screenshot) {
     text-wrap: nowrap;
 }
 
-#special-features li i {
+.dark-icons.lightmode {
     padding: 10px;
     color: gray;
     background-color: rgba(200, 200, 100, 0.6);
@@ -132,16 +147,9 @@ h2 {
     font-size: 3rem;
 }
 
-h5 {
-    color: black;
-}
-
-#collapse-section {
-    padding: 0;
-}
-
 .accordion {
     padding: 0;
+
 }
 
 .accordion-button:enabled,
@@ -153,8 +161,8 @@ h5 {
 
 .accordion-item {
     border: 0;
-    background-color: rgba(255, 255, 255, 0.75);
     border-left: #BBB 1px solid;
+    background-color: transparent;
 }
 
 .accordion-button h5 {
@@ -163,11 +171,19 @@ h5 {
 
 #collapse-section {
     background-image: url('/assets/pngtree-vector-illustration-of-white-pattern-background-on-grid-paper-with-dashed-lineseps10-vector-png-image_31573984.webp');
+    padding: 0;
+}
+
+#collapse-section.lightmode {
     box-shadow: inset 50px 50px 500px white, inset -50px -50px 500px white, inset 50px -50px 500px white, inset -50px 50px 500px white;
 }
 
 .accordion-body {
     width: 75%;
+}
+
+.accordion-h {
+    color: black;
 }
 
 #collapseOne h4 {
@@ -194,14 +210,11 @@ h5 {
 #why-use-planner {
     border-right: #DDD 1px solid;
     padding: 0;
-}
-
-#why-use-planner h4 {
-    color: black;
+    height: 100%;
 }
 
 #advantage-list {
-    width: 100%
+    width: 100%;
 }
 
 #advantage-list li i {
@@ -267,6 +280,33 @@ footer {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+nav.darkmode {
+    color: white;
+    background-color: 212529;
+}
+
+#bg-image.darkmode,
+#app-screenshot-section.darkmode {
+    box-shadow: inset 0px -20px 40px black;
+}
+
+#collapse-section.darkmode {
+    box-shadow: inset 50px 50px 500px #212529, inset -50px -50px 500px #212529, inset 50px -50px 500px #212529, inset -50px 50px 500px #212529;
+}
+
+.dark-icons.darkmode {
+    color: black;
+    background-color: #404020;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.darkmode {
+    color: white;
 }
 
 @media (max-width: 1024px) and (min-width: 426px) {
