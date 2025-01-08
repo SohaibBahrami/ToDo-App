@@ -20,6 +20,20 @@
 
 /** Styles */
 
+nav {
+    font-family: "Roboto", serif;
+    opacity: 80%;
+    width: 100vw;
+}
+
+nav a {
+    margin-left: 3%;
+}
+
+nav button {
+    margin-right: 3%;
+}
+
 body {
     overflow-x: hidden;
     position: relative;
@@ -52,6 +66,7 @@ section:has(#app-screenshot, #bg-image) {
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(1.5px);
+    filter: brightness(0.7);
     width: 101vw;
     height: 100vh;
     overflow: hidden;
@@ -70,17 +85,6 @@ section:has(#app-screenshot, #bg-image) {
     font-size: 1.5rem;
 }
 
-
-nav {
-    font-family: "Roboto", serif;
-    opacity: 80%;
-    width: 100vw;
-}
-
-nav a {
-    margin-left: 3%;
-}
-
 #app-screenshot {
     width: 60vw;
     height: 80vh;
@@ -96,12 +100,14 @@ section:has(#app-screenshot) {
     box-shadow: inset 0px -50px 500px #FFF;
 }
 
-section:has(h2) {
+#mid-section-text:has(h2) {
     height: 20vh;
+    margin-top: 30px;
 }
 
-section>ul {
+#special-features {
     width: 50%;
+    text-wrap: nowrap;
 }
 
 #special-features li i {
@@ -110,6 +116,7 @@ section>ul {
     background-color: rgba(200, 200, 100, 0.6);
     border-radius: 10px;
     margin-right: 5px;
+    margin-top: 5px;
 }
 
 #mid-section-text:has(h2) {
@@ -225,6 +232,7 @@ h5 {
     align-items: center;
     border: 0;
     padding: 5px;
+    font-size: 1rem;
 }
 
 .card-body {
@@ -242,10 +250,7 @@ h5 {
 }
 
 #blog-section {
-    margin: 20vh 0 4vh 10vw;
-    height: 20vh;
-    align-items: start;
-    justify-content: end;
+    height: 30vh;
     border: 0;
 }
 
@@ -255,10 +260,77 @@ h5 {
 }
 
 footer {
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+@media (max-width: 1024px) and (min-width: 426px) {
+    .review-stars {
+        font-size: 1.8rem;
+    }
+
+    .review-stars i:nth-of-type(3) {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    #mid-section-text h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        display: inline-block;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #BBB;
+        ;
+    }
+
+    div:has(.review-users-image) {
+        margin-bottom: 0px;
+    }
+
+    .review-users-image {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 426px) {
+    #mid-section-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        font-size: 0.8em;
+    }
+
+    #blog-section h2 {
+        font-size: 1.5rem;
+    }
+
+    #blog-section p {
+        font-size: 0.7rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    button a {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 376px) {
+    #blog-section h2 {
+        font-size: 1.1rem;
+    }
+
+    #blog-section p {
+        font-size: 0.5rem;
+    }
 }
