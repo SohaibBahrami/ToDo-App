@@ -20,6 +20,10 @@
 
 /** Styles */
 
+:root {
+    color-scheme: light dark;
+}
+
 nav {
     font-family: "Roboto", serif;
     opacity: 70%;
