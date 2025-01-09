@@ -7,16 +7,18 @@
     <section>
       <div id="bg-image" class="lightmode"></div>
       <div id="header-text">
-        <h1 class="display-3">
+        <h1 class="display-3" data-i18n="welcome">
           Welcome To
           <span class="border-bottom border-danger border-4 rounded"
             >Track</span
           >
         </h1>
-        <p class="display-6 mx-5">
+        <p class="display-6 mx-5" data-i18n="tagline">
           The All-in-one tool to take your productivity to the next level
         </p>
-        <button class="btn btn-primary"><a href="">Get Started</a></button>
+        <button class="btn btn-primary" data-i18n="header-button">
+          <a href="">Get Started</a>
+        </button>
       </div>
     </section>
     <section id="app-screenshot-section" class="d-none d-sm-flex lightmode">
@@ -30,23 +32,25 @@
     <section class="mt-3 d-none d-sm-flex container">
       <ul id="special-features" class="row flex-nowrap justify-content-center">
         <li class="col">
-          <i class="dark-icons fa-solid fa-bolt lightmode"></i> Fast &
-          Responsive
+          <i class="dark-icons fa-solid fa-bolt lightmode"></i>
+          <span data-i18n="specialFeatures.fast">Fast & Responsive</span>
         </li>
         <li class="col">
-          <i class="dark-icons fa-solid fa-dollar-sign lightmode"></i> Free to
-          Use
+          <i class="dark-icons fa-solid fa-dollar-sign lightmode"></i
+          ><span data-i18n="specialFeatures.free"> Free to Use</span>
         </li>
         <li class="col">
-          <i class="dark-icons fa-solid fa-fingerprint lightmode"></i> Fully
-          Personalized
+          <i class="dark-icons fa-solid fa-fingerprint lightmode"></i>
+          <span data-i18n="specialFeatures.personalized"
+            >Fully Personalized</span
+          >
         </li>
       </ul>
     </section>
   </header>
   <main>
     <section id="mid-section-text">
-      <h2 class="me-3">
+      <h2 class="me-3" data-i18n="midSectionText">
         Journaling your goals, <br />
         brings you closer to them
       </h2>
@@ -64,7 +68,9 @@
                 aria-expanded="true"
                 aria-controls="collapseLeft"
               >
-                <h4 class="accordion-h m-3">Why Use a Tool For Planning?</h4>
+                <h4 class="accordion-h m-3" data-i18n="whyUseTool">
+                  Why Use a Tool For Planning?
+                </h4>
               </button>
               <div
                 id="collapseLeft"
@@ -75,32 +81,42 @@
                   <ul id="advantage-list">
                     <li>
                       <i class="fa-solid fa-thumbs-down"></i
-                      ><b> They help plan and organize goals</b> and break them
-                      down into tasks,
+                      ><b data-i18n="firstUpside">
+                        They help plan and organize goals</b
+                      >
+                      and break them down into tasks,
                     </li>
                     <br />
                     <li>
                       <i class="fa-solid fa-thumbs-down"></i
-                      ><b> You'll always know the next step,</b> along with the
-                      required resources ,
+                      ><b data-i18n="secondUpside">
+                        You'll always know the next step,</b
+                      >
+                      along with the required resources ,
                     </li>
                     <br />
                     <li>
                       <i class="fa-solid fa-thumbs-down"></i
-                      ><b> Determine task duration and dependencies,</b> as well
-                      as deadlines.
+                      ><b data-i18n="thirdUpside">
+                        Determine task duration and dependencies,</b
+                      >
+                      as well as deadlines.
                     </li>
                     <br />
                     <li>
                       <i class="fa-solid fa-thumbs-down"></i
-                      ><b> You can cooperate with your friends,</b> for a boost
-                      in motivaion.
+                      ><b data-i18n="fourthUpside">
+                        You can cooperate with your friends,</b
+                      >
+                      for a boost in motivaion.
                     </li>
                     <br />
                     <li>
                       <i class="fa-solid fa-thumbs-down"></i
-                      ><b> It will bring balance to your life,</b> managing
-                      hobbies, family time and self-care.
+                      ><b data-i18n="fifthUpside">
+                        It will bring balance to your life,</b
+                      >
+                      managing hobbies, family time and self-care.
                     </li>
                   </ul>
                 </div>
@@ -127,7 +143,9 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                <h5 class="mb-0 accordion-h">The Importance of Planning</h5>
+                <h5 class="mb-0 accordion-h" data-i18n="importanceOfPlanning">
+                  The Importance of Planning
+                </h5>
               </button>
             </div>
             <div
@@ -136,30 +154,36 @@
               aria-labelledby="headingOne"
             >
               <div class="accordion-body" data-parent="#accordion">
-                <p>
+                <p data-i18n="importanceFirstP">
                   By determining in prior the tasks to be completed, planning
                   notes the way to deal with changes and unpredictable effects.
                 </p>
                 <br />
-                <h4>
+                <h4 data-i18n="importanceH4">
                   It helps us achieve our goals, and allows for more efficient
                   use of time and other resources.
                 </h4>
                 <br />
-                <h6>Not planning leads to:</h6>
+                <h6 data-i18n="importanceH6">Not planning leads to:</h6>
                 <br />
                 <ul id="downsides">
                   <li>
-                    <i class="fa-solid fa-thumbs-down"></i>Wasted resources
+                    <i class="fa-solid fa-thumbs-down"></i
+                    ><span data-i18n="firsthDownside">Wasted resources</span>
                   </li>
                   <br />
                   <li>
-                    <i class="fa-solid fa-thumbs-down"></i>Unpredictable results
+                    <i class="fa-solid fa-thumbs-down"></i
+                    ><span data-i18n="secondDownside"
+                      >Unpredictable results</span
+                    >
                   </li>
                   <br />
                   <li>
-                    <i class="fa-solid fa-thumbs-down"></i>Less oppurtunity for
-                    cooperation
+                    <i class="fa-solid fa-thumbs-down"></i
+                    ><span data-i18n="thirdDownside"
+                      >Less oppurtunity for cooperation</span
+                    >
                   </li>
                 </ul>
               </div>
@@ -175,7 +199,9 @@
                 aria-expanded="true"
                 aria-controls="collapseTwo"
               >
-                <h5 class="mb-0 accordion-h">The Curse of Overplanning</h5>
+                <h5 class="mb-0 accordion-h" data-i18n="curseOfOverplanning">
+                  The Curse of Overplanning
+                </h5>
               </button>
             </div>
 
@@ -185,14 +211,14 @@
               aria-labelledby="headingTwo"
             >
               <div class="accordion-body" data-parent="#accordion">
-                <p>
+                <p data-i18n="curseFirstP">
                   Excessive planning can lead to anxiety, disappointment,
                   stunted creativity, lack of trust and scattered focus. I also
                   have seen “overplanning” actually hinder performance and limit
                   success.
                 </p>
                 <br />
-                <h4>It's a form of procrastination</h4>
+                <h4 data-i18n="curseH4">It's a form of procrastination</h4>
                 <br />
                 <img
                   id="procrastination-image"
@@ -215,7 +241,9 @@
               src="assets/Gholam.webp"
               alt="Card image cap"
             />
-            <small class="text-muted text-nowrap">Rauf Miller</small>
+            <small class="text-muted text-nowrap" data-i18n="rauf"
+              >Rauf Miller</small
+            >
           </div>
           <div class="card-body">
             <div class="review-stars text-nowrap">
@@ -223,7 +251,7 @@
               ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
               ><i class="fa-solid fa-star"></i>
             </div>
-            <p class="card-text">
+            <p class="card-text" data-i18n="raufText">
               This is a wider card with supporting text below as a natural
               lead-in to additional content. This content is a little bit
               longer.
@@ -237,7 +265,9 @@
               src="assets/i0_wp_com-portrait-happy-smiley-man-1.webp"
               alt="Card image cap"
             />
-            <small class="text-muted text-nowrap">Michael White</small>
+            <small class="text-muted text-nowrap" data-i18n="michael"
+              >Michael White</small
+            >
           </div>
           <div class="card-body">
             <div class="review-stars text-nowrap">
@@ -245,7 +275,7 @@
               ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
               ><i class="fa-solid fa-star"></i>
             </div>
-            <p class="card-text">
+            <p class="card-text" data-i18n="michaelText">
               This card has supporting text below as a natural lead-in to
               additional content.
             </p>
@@ -258,7 +288,9 @@
               src="assets/Rachel-Montañez.webp"
               alt="Card image cap"
             />
-            <small class="text-muted text-nowrap">Rachel Montañez</small>
+            <small class="text-muted text-nowrap" data-i18n="rachel"
+              >Rachel Montañez</small
+            >
           </div>
           <div class="card-body">
             <div class="review-stars text-nowrap">
@@ -266,7 +298,7 @@
               ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
               ><i class="fa-solid fa-star"></i>
             </div>
-            <p class="card-text">
+            <p class="card-text" data-i18n="rachelText">
               This is a wider card with supporting text below as a natural
               lead-in to additional content. This card has even longer content
               than the first to show that equal height action.
@@ -279,15 +311,23 @@
       id="blog-section"
       class="d-flex align-items-center justify-content-center my-4"
     >
-      <h2 class="display-6 text-capitalize mb-4 text-center">
+      <h2
+        class="display-6 text-capitalize mb-4 text-center"
+        data-i18n="blogHeader"
+      >
         Check out our blog for some tips
       </h2>
-      <p class="mb-3 text-wrap text-center">
+      <p class="mb-3 text-wrap text-center" data-i18n="blogParagraph">
         Our blog will help you with various topics surrounding self-improvement.
         <br />
-        Including <b class="my-3">Fitness, Mental Health and Relationships</b>
+        Including
+        <b class="my-3" data-i18n="blogBold"
+          >Fitness, Mental Health and Relationships</b
+        >
       </p>
-      <button class="btn btn-primary"><a href="">Visit Now</a></button>
+      <button class="btn btn-primary">
+        <a href="" data-i18n="blogButton">Visit Now</a>
+      </button>
     </section>
   </main>
 </body>
