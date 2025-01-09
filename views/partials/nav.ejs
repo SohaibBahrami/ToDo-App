@@ -13,7 +13,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  <div class="collapse navbar-collapse d-flex" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item">
         <a class="nav-link" href="">Calendar</a>
@@ -22,8 +22,22 @@
         <a class="nav-link" href="">About</a>
       </li>
     </ul>
-    <button id="darkmode-toggle" class="btn" type="button">
-      <i class="theme-icon fa-solid fa-sun"></i>
-    </button>
+    <div class="d-flex ms-auto" style="margin-right: 3%">
+      <button id="darkmode-toggle" class="btn" type="button">
+        <i class="theme-icon fa-solid fa-sun"></i>
+      </button>
+      <select
+        id="langSelector"
+        class="form-select"
+        aria-label="Language Selector"
+        style="width: 75px"
+      >
+        <option selected value="en">En</option>
+        <option value="it">It</option>
+        <option value="es">Es</option>
+        <option value="de">De</option>
+        <option value="fa">Fa</option>
+      </select>
+    </div>
   </div>
 </nav>
