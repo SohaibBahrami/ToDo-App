@@ -1,20 +1,20 @@
-<nav class="navbar navbar-expand-lg sticky-top lightmode">
+<nav class="navbar navbar-expand-lg fixed-top lightmode">
   <a class="navbar-brand fs-5" href="" data-i18n="track"> ☇ Track</a>
 
   <button
     class="navbar-toggler"
     type="button"
     data-toggle="collapse"
-    data-target="#navbarTogglerDemo02"
-    aria-controls="navbarTogglerDemo02"
+    data-target="#navbarToggler"
+    aria-controls="navbarToggler"
     aria-expanded="false"
     aria-label="Toggle navigation"
   >
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse d-flex" id="navbarTogglerDemo02">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+  <div class="collapse navbar-collapse" id="navbarToggler">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-nowrap">
       <li class="nav-item">
         <a class="nav-link" href="" data-i18n="calendar">Calendar</a>
       </li>
@@ -22,20 +22,28 @@
         <a class="nav-link" href="#footer" data-i18n="about">About</a>
       </li>
     </ul>
-    <div class="d-flex ms-auto" style="margin-right: 3%">
-      <button id="darkmode-toggle" class="btn" type="button">
-        <i class="theme-icon fa-solid fa-sun"></i>
-      </button>
+    <div
+      class="d-flex ms-lg-auto flex-lg-row flex-column"
+      style="margin-right: 3%; margin-left: 2%"
+    >
       <select
         id="langSelector"
-        class="form-select"
+        class="form-select m-1"
         aria-label="Language Selector"
         style="width: 75px"
       >
-        <option selected value="en" onclick="setLanguage('en')">En</option>
-        <option value="es" onclick="setLanguage('es')">Es</option>
-        <option value="fa" onclick="setLanguage('fa')">Fa</option>
+        <option selected value="en">En</option>
+        <option value="es">Es</option>
+        <option value="fa">Fa</option>
       </select>
+      <button
+        id="darkmode-toggle"
+        class="btn"
+        type="button"
+        style="width: 50px"
+      >
+        <i class="theme-icon fa-solid fa-sun"></i>
+      </button>
     </div>
   </div>
 </nav>

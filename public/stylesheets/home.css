@@ -25,7 +25,7 @@
 }
 
 nav {
-    font-family: "Roboto", serif;
+    font-family: "Roboto", "Rubik", serif;
     opacity: 70%;
     width: 100vw;
 
@@ -38,6 +38,7 @@ nav.lightmode {
 
 nav a {
     margin-left: 3%;
+
 }
 
 nav button {
@@ -47,7 +48,7 @@ nav button {
 body {
     overflow-x: hidden;
     position: relative;
-    font-family: "Roboto", serif;
+    font-family: "Roboto", "Rubik", serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -120,9 +121,15 @@ section:has(#app-screenshot, #bg-image) {
 
 }
 
-#mid-section-text:has(h2) {
-    height: 20vh;
+#mid-section-text {
+    height: 40vh;
     margin-top: 30px;
+    align-items: start;
+    justify-content: end;
+}
+
+#mid-section-text h2 {
+    width: 80%;
 }
 
 #special-features {
@@ -137,13 +144,6 @@ section:has(#app-screenshot, #bg-image) {
     border-radius: 10px;
     margin-right: 5px;
     margin-top: 5px;
-}
-
-#mid-section-text:has(h2) {
-    height: 50vh;
-    align-items: start;
-    justify-content: end;
-    border-bottom: #BBB 1px solid;
 }
 
 h2 {
@@ -167,6 +167,7 @@ h2 {
     border: 0;
     border-left: #BBB 1px solid;
     background-color: transparent;
+
 }
 
 .accordion-button h5 {
@@ -176,6 +177,10 @@ h2 {
 #collapse-section {
     background-image: url('/assets/pngtree-vector-illustration-of-white-pattern-background-on-grid-paper-with-dashed-lineseps10-vector-png-image_31573984.webp');
     padding: 0;
+    border-right: #DDD 0.5px solid;
+    border-left: #DDD 0.5px solid;
+    border-top: #DDD 1px solid;
+    margin-bottom: 200px;
 }
 
 #collapse-section.lightmode {
@@ -188,22 +193,23 @@ h2 {
 
 .accordion-h {
     color: black;
+    margin: 0 10px;
 }
 
 #collapseOne h4 {
     border-left: red 2px solid;
-    padding-left: 10px;
+    padding: 0 10px;
 }
 
 #downsides li i {
     color: red;
-    margin-right: 10px;
+    margin: 0 10px;
     transform: rotateY(180deg);
 }
 
 #collapseTwo .accordion-body h4 {
     border-left: red 2px solid;
-    padding-left: 10px;
+    padding: 0 10px;
 }
 
 #procrastination-image {
@@ -212,7 +218,6 @@ h2 {
 }
 
 #why-use-planner {
-    border-right: #DDD 1px solid;
     padding: 0;
     height: 100%;
 }
@@ -224,7 +229,7 @@ h2 {
 #advantage-list li i {
     transform: rotateX(180deg);
     color: green;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 #brain-image {
@@ -279,6 +284,7 @@ h2 {
 
 footer {
     margin-top: 10vh;
+    font-family: "Roboto", "Rubik", serif;
 }
 
 a {
@@ -288,7 +294,7 @@ a {
 
 nav.darkmode {
     color: white;
-    background-color: 212529;
+    background-color: #212529;
 }
 
 #bg-image.darkmode,
