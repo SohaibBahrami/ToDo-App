@@ -9,15 +9,17 @@
       <div id="header-text">
         <h1 class="display-3" data-i18n="welcome">
           Welcome To
-          <span class="border-bottom border-danger border-4 rounded"
+          <span
+            class="border-bottom border-danger border-4 rounded"
+            data-i18n="welcomeTrack"
             >Track</span
           >
         </h1>
         <p class="display-6 mx-5" data-i18n="tagline">
           The All-in-one tool to take your productivity to the next level
         </p>
-        <button class="btn btn-primary" data-i18n="header-button">
-          <a href="">Get Started</a>
+        <button class="btn btn-primary">
+          <a href="" data-i18n="header-button">Get Started</a>
         </button>
       </div>
     </section>
@@ -50,9 +52,11 @@
   </header>
   <main>
     <section id="mid-section-text">
-      <h2 class="me-3" data-i18n="midSectionText">
-        Journaling your goals, <br />
-        brings you closer to them
+      <h2 class="me-3">
+        <span data-i18n="midSectionText1">Journaling your goals, </span
+        ><br /><span data-i18n="midSectionText2">
+          brings you closer to them</span
+        >
       </h2>
     </section>
     <section id="collapse-section" class="container d-none d-md-flex lightmode">
@@ -81,42 +85,47 @@
                   <ul id="advantage-list">
                     <li>
                       <i class="fa-solid fa-thumbs-down"></i
-                      ><b data-i18n="firstUpside">
+                      ><b data-i18n="firstUpsideBold">
                         They help plan and organize goals</b
+                      ><span data-i18n="firstUpside">
+                        and break them down into tasks.</span
                       >
-                      and break them down into tasks,
                     </li>
                     <br />
                     <li>
                       <i class="fa-solid fa-thumbs-down"></i
-                      ><b data-i18n="secondUpside">
+                      ><b data-i18n="secondUpsideBold">
                         You'll always know the next step,</b
+                      ><span data-i18n="secondUpside">
+                        along with the required resources.</span
                       >
-                      along with the required resources ,
                     </li>
                     <br />
                     <li>
                       <i class="fa-solid fa-thumbs-down"></i
-                      ><b data-i18n="thirdUpside">
+                      ><b data-i18n="thirdUpsideBold">
                         Determine task duration and dependencies,</b
+                      ><span data-i18n="thirdUpside">
+                        as well as deadlines.</span
                       >
-                      as well as deadlines.
                     </li>
                     <br />
                     <li>
                       <i class="fa-solid fa-thumbs-down"></i
-                      ><b data-i18n="fourthUpside">
-                        You can cooperate with your friends,</b
+                      ><b data-i18n="fourthUpsideBold">
+                        You can cooperate with your friends.</b
+                      ><span data-i18n="fourthUpsideBold">
+                        for a boost in motivaion.</span
                       >
-                      for a boost in motivaion.
                     </li>
                     <br />
                     <li>
                       <i class="fa-solid fa-thumbs-down"></i
-                      ><b data-i18n="fifthUpside">
+                      ><b data-i18n="fifthUpsideBold">
                         It will bring balance to your life,</b
+                      ><span data-i18n="fifthUpsideBold">
+                        managing hobbies, family time and self-care.</span
                       >
-                      managing hobbies, family time and self-care.
                     </li>
                   </ul>
                 </div>
@@ -317,7 +326,7 @@
       >
         Check out our blog for some tips
       </h2>
-      <p class="mb-3 text-wrap text-center" data-i18n="blogParagraph">
+      <p class="mb-3 text-wrap text-center" data-i18n="blogDescription">
         Our blog will help you with various topics surrounding self-improvement.
         <br />
         Including
