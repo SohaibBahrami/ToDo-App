@@ -19,7 +19,7 @@ function setLight() {
   appScreenshotSection.classList.remove("darkmode");
   appScreenshotSection.classList.add("lightmode");
   appScreenshot.classList.remove("darkmode");
-  appScreenshot.classList.add("darkmode");
+  appScreenshot.classList.add("lightmode");
   collapseSection.classList.remove("darkmode");
   collapseSection.classList.add("lightmode");
   icons.forEach((icon) => {
@@ -41,7 +41,7 @@ function setDark() {
   appScreenshotSection.classList.add("darkmode");
   appScreenshotSection.classList.remove("lightmode");
   appScreenshot.classList.add("darkmode");
-  appScreenshot.classList.remove("darkmode");
+  appScreenshot.classList.remove("lightmode");
   collapseSection.classList.add("darkmode");
   collapseSection.classList.remove("lightmode");
   icons.forEach((icon) => {

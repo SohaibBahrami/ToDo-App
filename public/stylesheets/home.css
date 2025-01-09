@@ -112,7 +112,7 @@ section:has(#app-screenshot, #bg-image) {
 }
 
 #app-screenshot.lightmode {
-    filter: drop-shadow(2px 2px 20px);
+    filter: drop-shadow(2px 2px 20px black);
 }
 
 #app-screenshot-section.lightmode {
@@ -296,13 +296,17 @@ nav.darkmode {
     box-shadow: inset 0px -20px 40px black;
 }
 
+#app-screenshot.darkmode {
+    filter: drop-shadow(2px 2px 20px white);
+}
+
 #collapse-section.darkmode {
     box-shadow: inset 50px 50px 500px #212529, inset -50px -50px 500px #212529, inset 50px -50px 500px #212529, inset -50px 50px 500px #212529;
 }
 
 .dark-icons.darkmode {
-    color: black;
-    background-color: #404020;
+    color: rgb(200, 200, 100);
+    background-color: rgba(128, 128, 128, 0.6);
     padding: 10px;
     border-radius: 10px;
     margin-right: 5px;
