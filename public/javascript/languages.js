@@ -6,9 +6,19 @@ const main = document.querySelector("main");
 const footer = document.querySelector("footer p");
 
 i18next.debug = true;
+
+// Function to get language from cookies
+function getLanguageFromCookies() {
+  const match = document.cookie.match(/lang=([^;]+)/);
+  return match ? match[1] : null;
+}
+
+const defaultLang = getLanguageFromCookies() || "en"; // default to 'en' if no cookie
+document.getElementById("langSelector").value = defaultLang; // Set the dropdown value
+
 i18next.use(Backend).init(
   {
-    lng: "en", // default language
+    lng: defaultLang, // use language from cookies
     fallbackLng: "en", // fallback language
     backend: {
       loadPath: "/languages/{{lng}}.json",
@@ -28,6 +38,7 @@ function updateContent() {
 }
 
 function setLanguage(lang) {
+  document.cookie = `lang=${lang}; path=/`; // Set cookie for language
   i18next.changeLanguage(lang, (err, t) => {
     if (err) return console.error(err);
     updateContent();
