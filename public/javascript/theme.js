@@ -8,6 +8,7 @@ const bgImage = document.getElementById("bg-image");
 const collapseSection = document.getElementById("collapse-section");
 const icons = document.querySelectorAll(".dark-icons");
 const accordionHeading = document.querySelectorAll(".accordion-h");
+
 function setLight() {
   html.setAttribute("data-bs-theme", "light");
   themeIcon.classList.remove("fa-regular");
@@ -30,6 +31,7 @@ function setLight() {
     h.classList.remove("darkmode");
   });
 }
+
 function setDark() {
   html.setAttribute("data-bs-theme", "dark");
   themeIcon.classList.add("fa-regular");
@@ -52,19 +54,39 @@ function setDark() {
     h.classList.add("darkmode");
   });
 }
-darkmodeBtn.addEventListener("click", () => {
+
+// Initial Theme Setting based on Cookie
+const themeFromCookie = document.cookie
+  .split("; ")
+  .find((row) => row.startsWith("data-bs-theme="));
+if (themeFromCookie) {
+  const themeValue = themeFromCookie.split("=")[1];
+  if (themeValue === "dark") {
+    setDark();
+  } else {
+    setLight();
+  }
+} else {
+  // Fallback to System Preference
+  if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    setDark();
+  } else {
+    setLight();
+  }
+}
+
+// Event Listener for Button Click
+darkmodeBtn.addEventListener("click", toggleTheme);
+
+function toggleTheme() {
   if (html.getAttribute("data-bs-theme") == "dark") {
     setLight();
+    document.cookie = "data-bs-theme=light";
   } else {
     setDark();
+    document.cookie = "data-bs-theme=dark";
   }
-});
-
-if (
-  window.matchMedia &&
-  window.matchMedia("(prefers-color-scheme: dark)").matches
-) {
-  setDark();
-} else {
-  setLight();
 }
