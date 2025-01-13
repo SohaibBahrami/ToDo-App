@@ -36,13 +36,24 @@ nav.lightmode {
     background-color: white;
 }
 
-nav a {
-    margin-left: 3%;
+.navbar-brand,
+.navbar-collapse {
+    margin-left: 2%;
 
 }
 
-nav button {
-    margin-right: 3%;
+#langSelector {
+    font-size: 1rem;
+    width: 55px;
+}
+
+.form-select {
+    padding: 5px 0;
+}
+
+.navbar-toggler,
+#right-nav {
+    margin-right: 4%;
 }
 
 body {
@@ -324,6 +335,11 @@ nav.darkmode {
 }
 
 @media (max-width: 1024px) and (min-width: 426px) {
+    #langSelector {
+        font-size: 0.9rem;
+        width: 50px
+    }
+
     .review-stars {
         font-size: 1.8rem;
     }
@@ -355,6 +371,12 @@ nav.darkmode {
 }
 
 @media (max-width: 426px) {
+
+    #langSelector {
+        font-size: 0.7rem;
+        width: 45px;
+    }
+
     #header-text h1 {
         font-size: 1.6rem;
     }

@@ -13,8 +13,8 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarToggler">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-nowrap">
+  <div class="collapse navbar-collapse ms-3 ms-lg-0" id="navbarToggler">
+    <ul class="navbar-nav me-auto mt-2 mt-lg-0 text-nowrap">
       <li class="nav-item">
         <a class="nav-link" href="" data-i18n="calendar"></a>
       </li>
@@ -22,28 +22,33 @@
         <a class="nav-link" href="#footer" data-i18n="about"></a>
       </li>
     </ul>
-    <div
-      class="d-flex ms-lg-auto flex-lg-row flex-column"
-      style="margin-right: 3%; margin-left: 2%"
+    <ul
+      id="right-nav"
+      class="navbar-nav ms-lg-auto text-nowrap mt-lg-0 mt-2 me-lg-3 me-0"
     >
+      <li class="nav-item">
+        <a href="" class="nav-link" data-i18n="register"></a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link me-lg-1" data-i18n="login"></a>
+      </li>
+
       <select
         id="langSelector"
-        class="form-select m-1"
+        class="form-select nav-item my-1 my-lg-0 border-start-0 ps-1"
         aria-label="Language Selector"
-        style="width: 120px"
       >
-        <option lang="en" selected value="en">English</option>
-        <option lang="es" value="es">Español</option>
-        <option lang="fa" value="fa">فارسی</option>
+        <option lang="en" selected value="en">En</option>
+        <option lang="es" value="es">Es</option>
+        <option lang="fa" value="fa">فا</option>
       </select>
       <button
         id="darkmode-toggle"
-        class="btn"
+        class="btn nav-item text-lg-center text-start p-0 mx-lg-3 mx-0 mt-2 mt-lg-0"
         type="button"
-        style="width: 50px"
       >
         <i class="theme-icon fa-solid fa-sun"></i>
       </button>
-    </div>
+    </ul>
   </div>
 </nav>
