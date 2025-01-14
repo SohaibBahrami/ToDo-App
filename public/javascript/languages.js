@@ -27,6 +27,7 @@ i18next.use(Backend).init(
   (err, t) => {
     if (err) return console.error(err);
     updateContent();
+    setLanguage(defaultLang); // Set language after initialization
   }
 );
 
@@ -42,18 +43,18 @@ function setLanguage(lang) {
   i18next.changeLanguage(lang, (err, t) => {
     if (err) return console.error(err);
     updateContent();
+    if (lang == "fa") {
+      main.setAttribute("dir", "rtl");
+      footer.style.textAlign = "right";
+    } else {
+      main.setAttribute("dir", "ltr");
+      footer.style.textAlign = "left";
+    }
+    html.setAttribute("lang", lang);
   });
 }
 
 document.getElementById("langSelector").addEventListener("change", (event) => {
   const lang = event.target.value;
-  if (lang == "fa") {
-    main.setAttribute("dir", "rtl");
-    footer.style.textAlign = "right";
-  } else {
-    main.setAttribute("dir", "ltr");
-    footer.style.textAlign = "left";
-  }
-  html.setAttribute("lang", lang);
   setLanguage(lang);
 });
