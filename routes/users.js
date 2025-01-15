@@ -1,21 +1,22 @@
 import express from "express";
 const router = express.Router();
+import users from "../controllers/users.js";
 
-router.get("/register", users.registerForm);
+// router.get("/register", users.registerForm);
 
-router.post("/register", users.register);
+// router.post("/register", users.register);
 
 router.get("/login", users.loginForm);
 
-router.post(
-  "/login",
-  passport.authenticate("local", {
-    failureFlash: true,
-    failureRedirect: "/login",
-  }),
-  wrapAsync(users.login)
-);
+// router.post(
+//   "/login",
+//   passport.authenticate("local", {
+//     failureFlash: true,
+//     failureRedirect: "/login",
+//   }),
+//   wrapAsync(users.login)
+// );
 
-router.get("/logout", users.logout);
+// router.get("/logout", users.logout);
 
 export default router;

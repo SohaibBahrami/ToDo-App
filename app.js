@@ -18,12 +18,19 @@ import engine from "ejs-mate";
 app.engine("ejs", engine);
 // static assets
 app.use(express.static(path.join(__dirname, "public")));
+// importing routers
+import userRoutes from "./routes/users.js";
+// importing models
+import User from "./models/User.js";
 
 //* Routes
 // home page
 app.get("/", (req, res) => {
   res.render("home.ejs");
 });
+
+// user routes
+app.use("/", userRoutes);
 
 app.listen(3000, () => {
   console.log("Port 3000 Open");
